@@ -20,7 +20,7 @@ ZIPでもNotionでもなく、**GitHub clone** で配ります。しかも clone
 2. Claude にこう頼む（コピペ）：
    ```
    デスクトップに cc-handson というフォルダを作って、その中に
-   https://github.com/<配布URL>/jissen-handson-0524 をクローンして。
+   https://github.com/gonta223/jissen-handson-0524 をクローンして。
    終わったらフォルダ構成を見せて。
    ```
    → Claude が `git clone` を実行してくれます。git コマンドを知らなくてOK。
