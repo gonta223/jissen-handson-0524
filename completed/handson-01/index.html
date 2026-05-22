@@ -1,0 +1,109 @@
+<!-- 完成形サンプル：handson-01 Step3 の出力例（output/index.html に相当）。架空データ。 -->
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>法人向けAI議事録ツール 競合比較ダッシュボード</title>
+<style>
+  :root{ --teal:#007a8a; --teal-dark:#006064; --teal-light:#e0f3f5; --ink:#0B1220; --sub:#475569; --bg:#F6F8FB; --line:#dbe3ea; }
+  *{ box-sizing:border-box; }
+  body{ font-family:-apple-system,"Hiragino Sans","Noto Sans JP",sans-serif; margin:0; background:var(--bg); color:var(--ink); line-height:1.7; }
+  header{ background:var(--teal); color:#fff; padding:32px 24px; }
+  header h1{ margin:0 0 6px; font-size:24px; }
+  header p{ margin:0; opacity:.9; font-size:14px; }
+  main{ max-width:1080px; margin:0 auto; padding:24px; }
+  section{ background:#fff; border:1px solid var(--line); border-radius:12px; padding:20px 24px; margin:20px 0; }
+  h2{ color:var(--teal-dark); font-size:18px; border-left:5px solid var(--teal); padding-left:10px; margin-top:0; }
+  table{ width:100%; border-collapse:collapse; font-size:13px; }
+  th,td{ border:1px solid var(--line); padding:8px 10px; text-align:left; vertical-align:top; }
+  th{ background:var(--teal-light); color:var(--teal-dark); }
+  .cards{ display:grid; grid-template-columns:repeat(auto-fill,minmax(300px,1fr)); gap:16px; }
+  .card{ border:1px solid var(--line); border-radius:10px; padding:16px; background:#fff; }
+  .card h3{ margin:0 0 8px; color:var(--teal-dark); font-size:16px; }
+  .price{ font-weight:700; color:var(--teal); }
+  .gap{ background:var(--teal-light); border-radius:10px; padding:14px 16px; margin:10px 0; }
+  .gap b{ color:var(--teal-dark); }
+  footer{ text-align:center; color:var(--sub); font-size:12px; padding:24px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>法人向けAI議事録ツール 競合比較ダッシュボード</h1>
+  <p>作成日：2026-05-24 ／ 調査対象：5社 ／ ※架空の練習用データ</p>
+</header>
+<main>
+
+  <section>
+    <h2>1. 比較表</h2>
+    <table>
+      <tr><th>観点</th><th>A社 MinuteFlow</th><th>B社 サクッと議事録</th><th>C社 LegalMinutes</th><th>D社 MeetAI Japan</th><th>E社 VoiceNote Global</th></tr>
+      <tr><td>価格帯</td><td>¥2,400/人/月〜＋個別</td><td>¥0／¥980／¥4,800</td><td>¥58,000〜¥148,000/月</td><td>¥1,800〜¥3,200/人/月</td><td>¥0／¥2,000／¥3,600/人/月</td></tr>
+      <tr><td>主要機能</td><td>話者分離・基幹連携・多言語30・SSO</td><td>ワンタップ録音・スマホ完結</td><td>取締役会対応・改ざん検知・署名</td><td>日本語特化・用語辞書・国内保管</td><td>自動録画・ハイライト・横断検索</td></tr>
+      <tr><td>ターゲット</td><td>大企業・上場・グローバル</td><td>個人・スモールチーム</td><td>法務・規制業界・監査</td><td>中堅企業・自治体・教育</td><td>リモート企業・多国籍チーム</td></tr>
+      <tr><td>強み</td><td>信頼性・連携の豊富さ</td><td>安い・速い・UX</td><td>証跡性・規制業界の信頼</td><td>日本語精度・国内保管・手頃</td><td>録画見返し・多言語・検索</td></tr>
+      <tr><td>弱み</td><td>高い・導入が重い・人数縛り</td><td>法人機能弱・誤変換</td><td>一般会議に過剰で割高</td><td>多言語と海外連携が弱い</td><td>日本語中程度・国内保管なし</td></tr>
+    </table>
+  </section>
+
+  <section>
+    <h2>2. 各社サマリー</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>A社 MinuteFlow</h3>
+        <p class="price">¥2,400/人/月〜（最低20人）</p>
+        <p><b>ターゲット：</b>大企業・上場・グローバル</p>
+        <p><b>強み：</b>信頼性（SOC2/ISO）・連携の豊富さ・大規模対応</p>
+        <p><b>弱み：</b>高い・導入が重い・最低人数縛り</p>
+      </div>
+      <div class="card">
+        <h3>B社 サクッと議事録</h3>
+        <p class="price">¥0／¥980／¥4,800</p>
+        <p><b>ターゲット：</b>個人・スモールチーム・副業</p>
+        <p><b>強み：</b>安い・速い・スマホ完結・UX</p>
+        <p><b>弱み：</b>法人機能弱・固有名詞の誤変換・長尺で雑</p>
+      </div>
+      <div class="card">
+        <h3>C社 LegalMinutes</h3>
+        <p class="price">¥58,000〜¥148,000/月</p>
+        <p><b>ターゲット：</b>法務・規制業界・監査法人</p>
+        <p><b>強み：</b>証跡性・規制業界の信頼・証拠能力</p>
+        <p><b>弱み：</b>一般会議には過剰で割高・学習コスト高</p>
+      </div>
+      <div class="card">
+        <h3>D社 MeetAI Japan</h3>
+        <p class="price">¥1,800〜¥3,200/人/月</p>
+        <p><b>ターゲット：</b>中堅企業・自治体・教育機関</p>
+        <p><b>強み：</b>日本語精度・国内データ保管・手頃な価格</p>
+        <p><b>弱み：</b>多言語と海外連携が弱い・国内認知中心</p>
+      </div>
+      <div class="card">
+        <h3>E社 VoiceNote Global</h3>
+        <p class="price">¥0／¥2,000／¥3,600/人/月</p>
+        <p><b>ターゲット：</b>リモート企業・多国籍チーム</p>
+        <p><b>強み：</b>録画見返し・多言語・過去会議の横断検索</p>
+        <p><b>弱み：</b>日本語精度は中程度・国内データ保管なし</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>3. 空白地帯（自社が刺さる狙い目）</h2>
+    <div class="gap"><b>① 中堅企業の業務横断レイヤー</b><br>A社は重く高い／B社は法人機能が弱い／C社は過剰。従業員50〜500名の「ちょうどいい」帯が手薄。月1万〜3万円帯のチーム課金で狙う。</div>
+    <div class="gap"><b>② 日本語精度 × 国内データ保管 × 手頃価格の三立</b><br>D社が近いが多言語・海外連携が弱い。3条件を同時に満たすプレイヤーが少ない。国内保管と日本語要約の質を訴求点に。</div>
+    <div class="gap"><b>③ 議事録の先のアクション連動</b><br>5社とも「作る」止まり。議事録→タスク自動起票→Slack通知までを軽量に一気通貫にする余地が残る。</div>
+  </section>
+
+  <section>
+    <h2>4. 次のアクション</h2>
+    <ol>
+      <li>狙う空白地帯（中堅企業帯）のターゲットに5件ヒアリングし、価格感と必須機能を確認する。</li>
+      <li>D社（日本語）・A社（連携）の弱みを突く差別化メッセージを1枚にまとめる。</li>
+      <li>「議事録→タスク連動」の最小プロトタイプを社内会議で1回試す。</li>
+    </ol>
+  </section>
+
+</main>
+<footer>このダッシュボードは Claude Code 実践編ハンズオンの練習用サンプルです（架空データ）。</footer>
+</body>
+</html>
